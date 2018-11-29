@@ -65,7 +65,7 @@ export default class Calculator extends Component {
         param1: usedEqualSign ? "" : response.data.result,
         param2: "",
         APIFunction: usedEqualSign ? null : this.getAPIFunction(value),
-        onParam1: false,
+        onParam1: usedEqualSign ? true : false,
         error: false
       })
     )
