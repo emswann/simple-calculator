@@ -17,7 +17,7 @@ public class CalculatorController implements Calculator {
 		try {
 			return ResponseEntity.ok(Calculator.add(Double.parseDouble(param1), Double.parseDouble(param2)));
 		} catch (Exception e) {
-			return new ResponseEntity<Equation>(new Equation("-"), HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<Equation>(new Equation("+"), HttpStatus.BAD_REQUEST);
 		}
 	}
 
